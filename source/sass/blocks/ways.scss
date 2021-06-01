@@ -1,0 +1,52 @@
+.ways__container {
+  padding: 200px 0 33px;
+
+  @media (max-width: $width-desktop+px) {
+    padding: 80px 80px 43px 80px;
+  }
+
+  @media (max-width: $width-tablet+px) {
+    padding: 68px 16px 15px 16px;
+  }
+}
+
+.ways__title {
+  max-width: 358px;
+  margin-bottom: 64px;
+  margin-left: 1px;
+  --decor-width: 228px;
+  --pos-y: -33px;
+  --line-height: 4px;
+
+  @include decorline;
+
+  @media (max-width: $width-desktop+px) {
+    padding-left: 0;
+    margin-bottom: 20px;
+    margin-left: 0;
+    max-width: 100%;
+    text-align: center;
+
+    &::after {
+      display: none;
+    }
+  }
+}
+
+.ways__text {
+  max-width: 328px;
+  font-size: 16px;
+  line-height: 28px;
+  letter-spacing: -0.466667px;
+  margin-bottom: 54px;
+
+  @media (max-width: $width-desktop+px) {
+    margin: 0 auto 40px;
+    max-width: 343px;
+    text-align: center;
+  }
+
+  @media (max-width: $width-tablet+px) {
+    margin-bottom: 20px;
+  }
+}

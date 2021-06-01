@@ -1,0 +1,32 @@
+<section class="modal-buy" aria-hidden="true">
+  <div class="modal-buy__content">
+    <div class="modal-buy__img-wrap">
+      <img src="img/modal-form-img.jpg" alt="" width="338" height="444" />
+    </div>
+
+    <form class="modal-buy__form form-modal" action="" method="">
+      <button type="button" class="modal-buy__close" aria-label="закрыть модальное окно">
+        <svg width="22" height="22">
+          <use xlink:href="#icon-close"></use>
+        </svg>
+      </button>
+      <p class="form-modal__title">Купить тур</p>
+      <div class="main-input__error-box">
+        <label class="form-modal__label main-label-input-tel" for="client-tel">
+          <input class="form-modal__input form-modal__input--tel main-input main-input-tel" type="tel" name="client-tel"
+            id="client-tel" placeholder="Введите 10 цифр номера" autocomplete="off" minlength="10" maxlength="10"
+            pattern="[0-9]{10}" required>
+          <span class="main-label-input-tel__req-icon">+7</span>
+        </label>
+        <div class="main-input__error main-input__error--tel">Данные не верны</div>
+      </div>
+      <div class="main-input__error-box ">
+        <input class="form-modal__input form-modal__input--mail main-input" type="email" name="client-email"
+          id="client-email" placeholder="E-mail" autocomplete="off"
+          pattern="([A-z0-9_.-]{1,})@([A-z0-9_.-]{1,})\.([A-z]{2,8})">
+        <div class="main-input__error main-input__error--mail">Данные не верны</div>
+      </div>
+      <button class="form-modal__btn-submit main-btn" type="submit">отправить</button>
+    </form>
+  </div>
+</section>

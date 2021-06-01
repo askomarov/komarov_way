@@ -1,0 +1,13 @@
+@mixin decorline {
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: var(--pos-y, -21px);
+    left: 0;
+    height: var(--line-height, 3px);
+    width: var(--decor-width, 175px);
+    background: $primary-color;
+  }
+}

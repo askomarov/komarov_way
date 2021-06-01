@@ -1,0 +1,144 @@
+.promo {
+  background: #556978;
+  position: relative;
+  z-index: 1;
+
+  @media (max-width: $width-tablet+px) {
+    background: #ffffff;
+  }
+}
+
+.promo__img-wrap {
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  pointer-events: none;
+  filter: contrast(1.2) saturate(1.5);
+  background: #556978;
+
+  img {
+    position: absolute;
+    min-width: calc(100% + 178px);
+    height: 1552px;
+    top: -670px;
+    left: -178px;
+  }
+
+  @media (max-width: $width-desktop+px) {
+    img {
+      min-width: initial;
+      width: 100%;
+      height: 344px;
+      top: 0;
+      left: 0;
+    }
+  }
+
+  @media (max-width: $width-tablet+px) {
+    height: 235px;
+  }
+
+  @media (max-width: 320.9px) {
+    img {
+      min-width: 378px;
+      height: 235px;
+      top: 0;
+      left: -25px;
+    }
+  }
+}
+
+.promo__container {
+  padding-top: 186px;
+  padding-bottom: 296px;
+  position: relative;
+  z-index: 5;
+
+  @media (max-width: $width-desktop+px) {
+    padding-top: 60px;
+    padding-bottom: 83px;
+  }
+
+  @media (max-width: $width-tablet+px) {
+    padding: 0 16px 40px 16px;
+  }
+}
+
+.promo__content {
+  display: grid;
+  margin-left: auto;
+  margin-right: 58px;
+  max-width: max-content;
+
+  @media (max-width: $width-desktop+px) {
+    max-width: 398px;
+    text-align: center;
+    margin: 0 auto;
+  }
+}
+
+.promo__title {
+  font-weight: 600;
+  font-size: 55px;
+  line-height: 80px;
+  letter-spacing: -1.10667px;
+  color: #ffffff;
+  max-width: 412px;
+  margin-bottom: 28px;
+
+  @media (max-width: $width-desktop+px) {
+    letter-spacing: normal;
+    margin-bottom: 15px;
+    font-size: 30px;
+    line-height: 45px;
+  }
+
+  @media (max-width: $width-tablet+px) {
+    font-size: 24px;
+    line-height: 36px;
+    margin-bottom: 20px;
+    min-height: 235px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+.promo__text {
+  font-size: 16px;
+  line-height: 27px;
+  letter-spacing: -0.466667px;
+  color: #ffffff;
+  max-width: 376px;
+  margin-bottom: 33px;
+
+  @media (max-width: $width-desktop+px) {
+    max-width: 100%;
+    margin-bottom: 10px;
+  }
+
+  @media (max-width: $width-tablet+px) {
+    margin-bottom: 20px;
+    color: $dark-color-2;
+  }
+}
+
+.promo__btn {
+  fill: none;
+  max-width: 340px;
+  justify-content: space-between;
+  padding: 0 40px;
+
+  @media (max-width: $width-desktop+px) {
+    margin: 0 auto;
+    width: 250px;
+  }
+
+  @media (max-width: $width-tablet+px) {
+    width: 288px;
+  }
+}

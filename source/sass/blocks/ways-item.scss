@@ -1,0 +1,68 @@
+.ways-item {
+  flex: 0 1 350px;
+  height: 430px;
+  position: relative;
+  overflow: hidden;
+
+  @media (max-width: $width-desktop+px) {
+    flex: 0 1 288px;
+    height: 425px;
+  }
+}
+
+.ways-item__link {
+  &:hover {
+    .ways-item__hover-content {
+      transform: translateX(0);
+      transition: all 0.3s ease 0.2s;
+    }
+
+    .hover-content__btn {
+      transform: scale(1);
+    }
+  }
+}
+
+.ways-item__figure {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.ways-item__img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+
+.ways-item__figcaption {
+  display: flex;
+  flex-wrap: wraps;
+  align-items: center;
+  justify-content: center;
+  min-height: 62px;
+  width: 215px;
+  background: #ffffff;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 29px;
+  text-align: center;
+  letter-spacing: -0.415px;
+  color: $dark-color-2;
+  position: absolute;
+  bottom: -1px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.ways-item__hover-content {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  transform: translateX(100%);
+  transition: all 0.3s ease 0s;
+}

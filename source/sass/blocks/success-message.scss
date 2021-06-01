@@ -1,0 +1,56 @@
+.success-message {
+  display: grid;
+  grid-template-columns: minmax(320px, 728px);
+  min-height: 444px;
+  align-items: center;
+  justify-content: center;
+  background: #fbf8f8;
+  position: fixed;
+  top: 150%;
+  left: 150%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s ease 0s;
+}
+
+.success-message__text {
+  font-weight: 500;
+  font-size: 25px;
+  line-height: 170%;
+  text-align: center;
+  color: #48494d;
+}
+
+.success-message--visible {
+  opacity: 1;
+  visibility: visible;
+  z-index: 5;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.success-message__close {
+  background: transparent;
+  width: 62px;
+  height: 62px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  right: 0;
+  top: 0;
+  stroke: #cdcbcb;
+  z-index: 10;
+
+  @media (min-width: $width-desktop+px) {
+    &:hover {
+      stroke: #000000;
+    }
+  }
+
+  &:active {
+    stroke: #000000;
+  }
+}

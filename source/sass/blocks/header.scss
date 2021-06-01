@@ -1,0 +1,36 @@
+.header {
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  z-index: 2;
+}
+
+.header__container {
+  @media (max-width: $width-desktop+px) {
+    padding: 0;
+  }
+}
+
+.header__logo {
+  width: 57px;
+  height: 22px;
+
+  svg {
+    width: 100%;
+    height: 100%;
+  }
+
+  @media (max-width: $width-desktop+px) {
+    width: 44px;
+    height: 17px;
+    margin-left: 21px;
+  }
+}
+
+.header__link-tel {
+  display: flex;
+  align-items: center;
+  margin: 0 15px 0 53px;
+
+  @media (max-width: $width-desktop+px) {
+    display: none;
+  }
+}

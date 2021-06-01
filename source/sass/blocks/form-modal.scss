@@ -1,0 +1,38 @@
+.form-modal {
+  position: relative;
+  background: #fbf8f8;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 72px;
+
+  @media (max-width: $width-tablet+px) {
+    background: #ffffff;
+  }
+}
+
+.form-modal__title {
+  font-weight: 600;
+  font-size: 25px;
+  line-height: 170%;
+  color: #48494d;
+  margin-bottom: 50px;
+}
+
+.form-modal__input {
+  min-width: 270px;
+  margin-bottom: 20px;
+
+  @media (max-width: $width-tablet+px) {
+    width: 288px;
+  }
+}
+
+.form-modal__btn-submit {
+  min-height: 50px;
+  width: 176px;
+
+  @media (max-width: $width-tablet+px) {
+    width: 288px;
+  }
+}

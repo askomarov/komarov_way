@@ -1,0 +1,131 @@
+.country-list-item {
+  display: grid;
+  grid-template-columns: 370px 1fr;
+  column-gap: 100px;
+  position: absolute;
+  transform: translateX(-110%);
+  transition: opacity 0.7s ease 0s;
+  opacity: 0;
+  visibility: hidden;
+
+  @media (max-width: $width-desktop+px) {
+    grid-template-columns: 1fr;
+    row-gap: 29px;
+    transition: opacity 0.7s ease 0s;
+  }
+
+  @media (max-width: $width-tablet+px) {
+    row-gap: 49px;
+    transition: all 0.7s ease 0s;
+  }
+}
+
+.country-list-item--active {
+  position: relative;
+  opacity: 1;
+  visibility: visible;
+  transform: translateX(0);
+  transition: opacity 0.7s ease 0s;
+
+  @media (max-width: $width-tablet+px) {
+    transition: all 0.7s ease 0s;
+  }
+}
+
+.country-list-item__left {
+  max-width: 370px;
+
+  @media (max-width: $width-desktop+px) {
+    max-width: 100%;
+    text-align: center;
+    padding: 0 21px;
+  }
+
+  @media (max-width: $width-tablet+px) {
+    padding: 0 15px;
+  }
+}
+
+.country-list-item__title {
+  margin-bottom: 53px;
+  padding-top: 15px;
+
+  @include decorline;
+
+  @media (max-width: $width-desktop+px) {
+    padding: 0;
+    margin-bottom: 20px;
+
+    &::after {
+      display: none;
+    }
+  }
+}
+
+.country-list-item__text {
+  font-size: 16px;
+  line-height: 28px;
+  letter-spacing: -0.466667px;
+  color: rgba(44, 46, 63, 0.7);
+  margin-bottom: 49px;
+
+  @media (max-width: $width-desktop+px) {
+    margin-bottom: 20px;
+  }
+}
+
+.country-list-item__btn {
+  max-width: 250px;
+
+  @media (max-width: $width-desktop+px) {
+    margin: 0 auto;
+  }
+
+  @media (max-width: $width-tablet+px) {
+    max-width: 288px;
+  }
+}
+
+.country-list-item__right {
+  position: relative;
+}
+
+.country-list-item__img-wrap {
+  position: relative;
+  overflow: hidden;
+  width: 430px;
+  height: 596px;
+
+  @media (max-width: $width-desktop+px) {
+    width: 100%;
+    height: 415px;
+  }
+
+  @media (max-width: $width-tablet+px) {
+    height: 425px;
+  }
+}
+
+.country-list-item__img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  bottom: 0;
+  left: 0;
+}
+
+.country-list-item__feedback-block {
+  position: absolute;
+  top: 114px;
+  right: 0;
+
+  @media (max-width: $width-desktop+px) {
+    top: 80px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  @media (max-width: $width-tablet+px) {
+    top: 50px;
+  }
+}

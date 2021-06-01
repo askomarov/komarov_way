@@ -1,0 +1,57 @@
+.about {
+  padding: 50px 0 60px;
+
+  @media (max-width: $width-desktop+px) {
+    padding-top: 40px;
+    padding-bottom: 50px;
+  }
+
+  @media (max-width: $width-tablet+px) {
+    padding-top: 10px;
+    padding-bottom: 46px;
+  }
+
+  @media (min-width: $width-desktop+px) {
+    background: url("../img/background-map.png") no-repeat;
+    background-size: 1443px 1089px;
+    background-position: center 150px;
+  }
+}
+
+.about__container {
+  padding-left: 0;
+  padding-right: 0;
+
+  @media (max-width: $width-desktop+px) {
+    padding-bottom: 50px;
+  }
+}
+
+.about__tapbar-wrap {
+  max-width: $max-width + px;
+  margin: 0 auto 80px;
+
+  @media (max-width: $width-desktop+px) {
+    max-width: initial;
+    margin: 0 0 33px;
+  }
+
+  @media (max-width: $width-tablet+px) {
+    margin-bottom: 24px;
+  }
+}
+
+.about__tapbar {
+  max-width: 899px;
+  margin-left: 1px;
+
+  @media (max-width: $width-desktop+px) {
+    margin-left: 38px;
+    width: 730px;
+  }
+
+  @media (max-width: $width-tablet+px) {
+    margin-left: 15px;
+    width: 305px;
+  }
+}

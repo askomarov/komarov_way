@@ -1,0 +1,36 @@
+.pricing-call-link {
+  display: flex;
+  align-items: center;
+  color: #000000;
+
+  @media (min-width: $width-desktop+px) {
+    &:hover {
+      stroke: $primary-color-hover;
+      color: $primary-color-hover;
+    }
+  }
+}
+
+.pricing-call-link__icon {
+  fill: none;
+  stroke: $primary-color;
+  margin-right: 26px;
+
+  @media (max-width: $width-desktop+px) {
+    display: none;
+  }
+}
+
+.pricing-call-link__text {
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 32px;
+
+  width: 100%;
+
+  @media (max-width: $width-desktop+px) {
+    font-size: 18px;
+    color: $primary-color;
+    text-decoration: underline;
+  }
+}

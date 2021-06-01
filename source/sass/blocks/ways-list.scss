@@ -1,0 +1,35 @@
+.ways-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  column-gap: 60px;
+  row-gap: 101px;
+
+  @media (max-width: $width-desktop+px) {
+    column-gap: 30px;
+    row-gap: 20px;
+  }
+
+  @media (max-width: $width-tablet+px) {
+    row-gap: 35px;
+  }
+}
+
+.ways-list__item {
+  &:last-child {
+    margin-left: 60px;
+  }
+
+  @media (max-width: $width-desktop+px) {
+    &:last-child {
+      margin-left: 0;
+      margin-top: 10px;
+    }
+  }
+
+  @media (max-width: 320.9px) {
+    &:last-child {
+      margin-top: 0;
+    }
+  }
+}

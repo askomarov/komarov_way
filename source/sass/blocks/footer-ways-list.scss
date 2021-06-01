@@ -1,0 +1,26 @@
+.footer-ways-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+
+  @media (max-width: $width-tablet+px) {
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+    text-align: center;
+    row-gap: 20px;
+
+    li:nth-child(3n) {
+      grid-column: 1/-1;
+      justify-self: center;
+    }
+  }
+
+  @media (max-width: $width-tablet+px) {
+    row-gap: 11px;
+  }
+}
+
+.footer-ways-list__link {
+  font-size: 14px;
+  line-height: 17px;
+  margin-bottom: 10px;
+}

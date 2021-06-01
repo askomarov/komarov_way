@@ -1,0 +1,11 @@
+.page {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: min-content 1fr min-content;
+  height: 100%;
+  font-family: $font-family;
+}
+
+.page.lock {
+  overflow: hidden;
+}

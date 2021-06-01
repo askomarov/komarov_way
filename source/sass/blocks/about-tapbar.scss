@@ -1,0 +1,37 @@
+.about-tapbar {
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid rgba(44, 46, 63, 0.3);
+  padding: 15px 0;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+}
+
+.about-tapbar__item {
+  scroll-snap-align: start;
+  margin-right: 99px;
+  color: rgba(44, 46, 63, 0.3);
+  transition: all 0.3s ease 0s;
+  cursor: pointer;
+
+  &:last-child {
+    margin-right: 0;
+  }
+
+  @media (min-width: $width-desktop+px) {
+    &:hover {
+      color: $primary-color-hover;
+    }
+  }
+}
+
+.about-tapbar__item--active {
+  color: $primary-color;
+}
+
+.about-tapbar__text {
+  font-size: 20px;
+  line-height: 24px;
+  letter-spacing: -0.415px;
+  pointer-events: none;
+}

@@ -1,0 +1,148 @@
+.pricing-card {
+  background: #ffffff;
+  border: 1px solid rgba(44, 46, 63, 0.3);
+  border-radius: 6px;
+  padding: 40px 30px 30px;
+  display: flex;
+  flex-direction: column;
+  transition: all 0.3s ease 0s;
+
+  @media (max-width: $width-desktop+px) {
+    padding: 30px 20px 0;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    border-bottom: 0;
+    max-width: 288px;
+  }
+
+  @media (min-width: $width-desktop+px) {
+    &:hover {
+      border-color: $primary-color;
+      box-shadow: 0 0 0 1px $primary-color, inset 0 0 0 1px $primary-color;
+
+      .pricing-card__header {
+        color: $primary-color;
+      }
+
+      .pricing-card__features-list {
+        li::before {
+          background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg width='14' height='12' viewBox='0 0 14 12' fill='none' xmlns='http://www.w3.org/2000/svg'%3e%3cpath fill-rule='evenodd' clip-rule='evenodd' d='M13.6138 0.210585C14.0498 0.549578 14.1285 1.17784 13.7895 1.61385L6.01453 11.6138C5.84138 11.8365 5.58223 11.9758 5.30094 11.9972C5.01966 12.0186 4.74242 11.9202 4.53757 11.7262L0.312502 7.72623C-0.0885582 7.34653 -0.105878 6.71361 0.273818 6.31255C0.653514 5.91149 1.28644 5.89417 1.6875 6.27386L5.11216 9.51608L12.2105 0.386246C12.5495 -0.0497617 13.1778 -0.128408 13.6138 0.210585Z' fill='%23141517'/%3e%3c/svg%3e ");
+        }
+      }
+    }
+  }
+}
+
+.pricing-card__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 36px;
+  color: rgba(20, 21, 23, 0.7);
+
+  @media (max-width: $width-desktop+px) {
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 11px;
+  }
+}
+
+.pricing-card__title {
+  letter-spacing: -1.27273px;
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 38px;
+  transition: all 0.3s ease 0s;
+
+  @media (max-width: $width-desktop+px) {
+    font-size: 24px;
+  }
+
+  @media (max-width: $width-tablet+px) {
+    line-height: 34px;
+  }
+}
+
+.pricing-card__price {
+  font-weight: bold;
+  font-size: 25px;
+  line-height: 34px;
+  transition: all 0.3s ease 0s;
+}
+
+.pricing-card__subtext {
+  font-size: 16px;
+  line-height: 24px;
+  color: $dark-color-2;
+  margin-bottom: 28px;
+
+  @media (max-width: $width-desktop+px) {
+    text-align: center;
+    margin-bottom: 6px;
+  }
+
+  @media (max-width: $width-tablet+px) {
+    margin-bottom: 9px;
+  }
+}
+
+.pricing-card__features-list {
+  border-top: 1px solid rgba(44, 46, 63, 0.3);
+  padding-top: 30px;
+  font-size: 16px;
+  line-height: 32px;
+  color: $dark-color-2;
+  padding-left: 30px;
+  margin-bottom: 30px;
+  flex: 1 1 auto;
+
+  li {
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      width: 14px;
+      height: 16px;
+      top: 7px;
+      left: -30px;
+      background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg width='14' height='12' viewBox='0 0 14 12' fill='none' xmlns='http://www.w3.org/2000/svg'%3e%3cpath fill-rule='evenodd' clip-rule='evenodd' d='M13.6138 0.210585C14.0498 0.549578 14.1285 1.17784 13.7895 1.61385L6.01453 11.6138C5.84138 11.8365 5.58223 11.9758 5.30094 11.9972C5.01966 12.0186 4.74242 11.9202 4.53757 11.7262L0.312502 7.72623C-0.0885582 7.34653 -0.105878 6.71361 0.273818 6.31255C0.653514 5.91149 1.28644 5.89417 1.6875 6.27386L5.11216 9.51608L12.2105 0.386246C12.5495 -0.0497617 13.1778 -0.128408 13.6138 0.210585Z' fill='%23FE7865'/%3e%3c/svg%3e ");
+      background-size: 14px 16px;
+      background-repeat: no-repeat;
+    }
+
+    &:not(:last-child) {
+      margin-bottom: 15px;
+    }
+  }
+
+  @media (max-width: $width-desktop+px) {
+    padding-top: 20px;
+
+    li:not(:last-child) {
+      margin-bottom: 10px;
+    }
+  }
+
+  @media (max-width: $width-tablet+px) {
+    padding-left: 28px;
+
+    li:not(:last-child) {
+      margin-bottom: 8px;
+    }
+  }
+}
+
+.pricing-card__btn {
+  min-height: 75px;
+  width: 100%;
+
+  @media (max-width: $width-desktop+px) {
+    position: relative;
+    left: -21px;
+    min-height: 50px;
+    width: calc(100% + 42px);
+  }
+}

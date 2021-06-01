@@ -1,0 +1,28 @@
+.link-tel {
+  color: $dark-color;
+  fill: none;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 32px;
+
+  @media (min-width: $width-desktop+px) {
+    &:hover {
+      color: $primary-color-hover;
+
+      .link-tel__icon {
+        stroke: $primary-color-hover;
+      }
+    }
+  }
+}
+
+.link-tel__icon {
+  width: 30px;
+  height: 30px;
+  margin-right: 10px;
+  stroke: $dark-color;
+}
+
+.link-tel__text {
+  text-decoration: underline;
+}
