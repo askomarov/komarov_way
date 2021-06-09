@@ -37,7 +37,7 @@ const errorInputMail = modalForm.querySelector('.main-input__error--mail');
 const successModalMessage = document.querySelector('.success-message');
 const closeSuccesMesBtn = document.querySelector('.success-message__close');
 
-const inputTelIvalid = () => {
+const inputTelInvalid = () => {
   inputTelModalForm.setCustomValidity('Данные не верны');
   inputTelModalForm.style.border = '1px solid #fe7865';
   errorInputTel.style.opacity = '1';
@@ -61,8 +61,8 @@ const inputMailValid = () => {
 
 const onInputTel = () => {
   inputTelModalForm.addEventListener('input', () => {
-    if (inputTelModalForm.value.length < 10) {
-      inputTelIvalid();
+    if (inputTelModalForm.value.length < 10 & inputTelModalForm.value.length !== 0) {
+      inputTelInvalid();
     } else {
       inputTelvalid();
     }
@@ -270,7 +270,7 @@ const inputMailContactValid = () => {
 
 const onInputTelContact = () => {
   contactTelInput.addEventListener('input', () => {
-    if (contactTelInput.value.length < 10) {
+    if (contactTelInput.value.length < 10 & contactTelInput.value.length !== 0) {
       inputTelContactIvalid();
     } else {
       inputTelContactvalid();

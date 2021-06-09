@@ -46,13 +46,14 @@
     font-size: 24px;
   }
 }
-
-.main-label-input-tel {
-  min-height: 50px;
+.main-label {
+  display: inline-block;
+  vertical-align: middle;
+  height: 50px;
   position: relative;
 }
 
-.main-label-input-tel__req-icon {
+.main-label__req-icon {
   position: absolute;
   top: 11px;
   left: 14px;
@@ -71,11 +72,11 @@
   display: flex;
   align-items: center;
   padding: 0 15px;
-  min-height: 50px;
+  height: 50px;
   background: #ffffff;
   border: 1px solid rgba(44, 46, 63, 0.3);
   font-size: 14px;
-  line-height: 17px;
+  line-height: 50px;
   color: $dark-color;
 
   &::placeholder {
@@ -89,12 +90,10 @@
   }
 }
 
-.main-input-tel {
+.main-input--tel {
+  display: inline-block;
+  vertical-align: middle;
   padding-left: 51px;
-  position: relative;
-}
-
-.main-input__error-box {
   position: relative;
 }
 

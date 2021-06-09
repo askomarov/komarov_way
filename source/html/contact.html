@@ -4,20 +4,18 @@
     <form class="contact__form" action="#" method="post">
       <p class="contact__title">У Вас остались вопросы?</p>
       <p class="contact__subtext">Оставьте свой номер или e-mail и мы свяжемся с Вами</p>
-      <div class="main-input__error-box">
-        <label class="contact__label main-label-input-tel" for="client-tel">
-          <input class="contact__input contact__input--tel main-input main-input-tel" type="tel" name="client-tel"
-            id="client-tel" minlength="10" maxlength="10" pattern="[0-9]{10}" required
-            placeholder="Введите 10 цифр номера" autocomplete="off">
-          <span class="main-label-input-tel__req-icon">+7</span>
-        </label>
-        <div class="main-input__error main-input__error--tel">Данные не верны</div>
-      </div>
-      <div class="main-input__error-box">
+      <label class="contact__label main-label main-label-input-tel" for="client-tel">
+        <input class="contact__input contact__input--tel main-input main-input--tel" type="tel" name="client-tel"
+          id="client-tel" minlength="10" maxlength="10" pattern="[0-9]{10}" required
+          placeholder="Введите 10 цифр номера" autocomplete="off">
+        <span class="main-label__req-icon">+7</span>
+        <span class="main-input__error main-input__error--tel">Данные не верны</span>
+      </label>
+      <label class="contact__label main-label" for="client-email">
         <input class="contact__input contact__input--mail main-input" type="email" name="client-email" id="client-email"
           placeholder="E-mail" pattern="([A-z0-9_.-]{1,})@([A-z0-9_.-]{1,})\.([A-z]{2,8})" autocomplete="off">
-        <div class="main-input__error main-input__error--mail">Данные не верны</div>
-      </div>
+        <span class="main-input__error main-input__error--mail">Данные не верны</span>
+      </label>
       <button class="contact__btn-submit main-btn" type="submit">отправить</button>
     </form>
   </div>

@@ -89,17 +89,12 @@
 
 .contact__label {
   width: 100%;
-  height: 100%;
-
   @media (max-width: $width-tablet+px) {
     margin-bottom: 20px;
   }
 }
 
 .contact__input--tel {
-  width: 100%;
-  height: 100%;
-
   @media (max-width: $width-tablet+px) {
     height: 50px;
     margin-bottom: 20px;
